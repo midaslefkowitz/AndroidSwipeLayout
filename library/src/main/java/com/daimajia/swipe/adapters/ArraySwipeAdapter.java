@@ -13,10 +13,10 @@ import com.daimajia.swipe.util.Attributes;
 
 import java.util.List;
 
-public abstract class ArraySwipeAdapter<T> extends ArrayAdapter implements SwipeItemMangerInterface, SwipeAdapterInterface {
+public abstract class ArraySwipeAdapter<T> extends ArrayAdapter<T> implements SwipeItemMangerInterface, SwipeAdapterInterface {
 
     private SwipeItemMangerImpl mItemManger = new SwipeItemMangerImpl(this);
-    {}
+
     public ArraySwipeAdapter(Context context, int resource) {
         super(context, resource);
     }
