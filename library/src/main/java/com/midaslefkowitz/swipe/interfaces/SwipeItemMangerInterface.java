@@ -1,7 +1,7 @@
-package com.daimajia.swipe.interfaces;
+package com.midaslefkowitz.swipe.interfaces;
 
-import com.daimajia.swipe.SwipeLayout;
-import com.daimajia.swipe.util.Attributes;
+import com.midaslefkowitz.swipe.SwipeLayout;
+import com.midaslefkowitz.swipe.util.Attributes;
 
 import java.util.List;
 

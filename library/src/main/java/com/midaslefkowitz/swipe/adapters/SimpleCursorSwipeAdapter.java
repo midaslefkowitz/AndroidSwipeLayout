@@ -1,29 +1,29 @@
-package com.daimajia.swipe.adapters;
+package com.midaslefkowitz.swipe.adapters;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CursorAdapter;
+import android.widget.SimpleCursorAdapter;
 
-import com.daimajia.swipe.SwipeLayout;
-import com.daimajia.swipe.implments.SwipeItemMangerImpl;
-import com.daimajia.swipe.interfaces.SwipeAdapterInterface;
-import com.daimajia.swipe.interfaces.SwipeItemMangerInterface;
-import com.daimajia.swipe.util.Attributes;
+import com.midaslefkowitz.swipe.SwipeLayout;
+import com.midaslefkowitz.swipe.implments.SwipeItemMangerImpl;
+import com.midaslefkowitz.swipe.interfaces.SwipeAdapterInterface;
+import com.midaslefkowitz.swipe.interfaces.SwipeItemMangerInterface;
+import com.midaslefkowitz.swipe.util.Attributes;
 
 import java.util.List;
 
-public abstract class CursorSwipeAdapter extends CursorAdapter implements SwipeItemMangerInterface, SwipeAdapterInterface {
+public abstract class SimpleCursorSwipeAdapter extends SimpleCursorAdapter implements SwipeItemMangerInterface, SwipeAdapterInterface {
 
     private SwipeItemMangerImpl mItemManger = new SwipeItemMangerImpl(this);
 
-    protected CursorSwipeAdapter(Context context, Cursor c, boolean autoRequery) {
-        super(context, c, autoRequery);
+    protected SimpleCursorSwipeAdapter(Context context, int layout, Cursor c, String[] from, int[] to, int flags) {
+        super(context, layout, c, from, to, flags);
     }
 
-    protected CursorSwipeAdapter(Context context, Cursor c, int flags) {
-        super(context, c, flags);
+    protected SimpleCursorSwipeAdapter(Context context, int layout, Cursor c, String[] from, int[] to) {
+        super(context, layout, c, from, to);
     }
 
     @Override
@@ -46,11 +46,6 @@ public abstract class CursorSwipeAdapter extends CursorAdapter implements SwipeI
     @Override
     public void closeAllExcept(SwipeLayout layout) {
         mItemManger.closeAllExcept(layout);
-    }
-
-    @Override
-    public void closeAllItems() {
-        mItemManger.closeAllItems();
     }
 
     @Override

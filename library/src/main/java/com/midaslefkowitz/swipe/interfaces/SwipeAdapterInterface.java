@@ -1,4 +1,4 @@
-package com.daimajia.swipe.interfaces;
+package com.midaslefkowitz.swipe.interfaces;
 
 public interface SwipeAdapterInterface {
 

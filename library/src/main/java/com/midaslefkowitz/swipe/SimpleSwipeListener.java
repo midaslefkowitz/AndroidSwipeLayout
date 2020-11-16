@@ -1,4 +1,4 @@
-package com.daimajia.swipe;
+package com.midaslefkowitz.swipe;
 
 public class SimpleSwipeListener implements SwipeLayout.SwipeListener {
 

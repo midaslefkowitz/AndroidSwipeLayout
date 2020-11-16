@@ -1,4 +1,4 @@
-package com.daimajia.swipe.util;
+package com.midaslefkowitz.swipe.util;
 
 
 public class Attributes {

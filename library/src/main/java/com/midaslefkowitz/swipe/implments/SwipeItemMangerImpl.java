@@ -1,12 +1,12 @@
-package com.daimajia.swipe.implments;
+package com.midaslefkowitz.swipe.implments;
 
 import android.view.View;
 
-import com.daimajia.swipe.SimpleSwipeListener;
-import com.daimajia.swipe.SwipeLayout;
-import com.daimajia.swipe.interfaces.SwipeAdapterInterface;
-import com.daimajia.swipe.interfaces.SwipeItemMangerInterface;
-import com.daimajia.swipe.util.Attributes;
+import com.midaslefkowitz.swipe.SimpleSwipeListener;
+import com.midaslefkowitz.swipe.SwipeLayout;
+import com.midaslefkowitz.swipe.interfaces.SwipeAdapterInterface;
+import com.midaslefkowitz.swipe.interfaces.SwipeItemMangerInterface;
+import com.midaslefkowitz.swipe.util.Attributes;
 
 import java.util.ArrayList;
 import java.util.Collections;

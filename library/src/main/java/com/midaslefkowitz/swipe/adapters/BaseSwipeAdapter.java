@@ -1,14 +1,14 @@
-package com.daimajia.swipe.adapters;
+package com.midaslefkowitz.swipe.adapters;
 
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
-import com.daimajia.swipe.SwipeLayout;
-import com.daimajia.swipe.implments.SwipeItemMangerImpl;
-import com.daimajia.swipe.interfaces.SwipeAdapterInterface;
-import com.daimajia.swipe.interfaces.SwipeItemMangerInterface;
-import com.daimajia.swipe.util.Attributes;
+import com.midaslefkowitz.swipe.SwipeLayout;
+import com.midaslefkowitz.swipe.implments.SwipeItemMangerImpl;
+import com.midaslefkowitz.swipe.interfaces.SwipeAdapterInterface;
+import com.midaslefkowitz.swipe.interfaces.SwipeItemMangerInterface;
+import com.midaslefkowitz.swipe.util.Attributes;
 
 import java.util.List;
 
@@ -17,7 +17,7 @@ public abstract class BaseSwipeAdapter extends BaseAdapter implements SwipeItemM
     protected SwipeItemMangerImpl mItemManger = new SwipeItemMangerImpl(this);
 
     /**
-     * return the {@link com.daimajia.swipe.SwipeLayout} resource id, int the view item.
+     * return the {@link com.midaslefkowitz.swipe.SwipeLayout} resource id, int the view item.
      * @param position
      * @return
      */

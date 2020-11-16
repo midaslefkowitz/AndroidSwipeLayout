@@ -1,4 +1,4 @@
-package com.daimajia.swipe;
+package com.midaslefkowitz.swipe;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -168,11 +168,11 @@ public class SwipeLayout extends FrameLayout {
 
     /**
      * bind a view with a specific
-     * {@link com.daimajia.swipe.SwipeLayout.OnRevealListener}
+     * {@link com.midaslefkowitz.swipe.SwipeLayout.OnRevealListener}
      *
      * @param childId the view id.
      * @param l       the target
-     *                {@link com.daimajia.swipe.SwipeLayout.OnRevealListener}
+     *                {@link com.midaslefkowitz.swipe.SwipeLayout.OnRevealListener}
      */
     public void addRevealListener(int childId, OnRevealListener l) {
         View child = findViewById(childId);
@@ -191,10 +191,10 @@ public class SwipeLayout extends FrameLayout {
 
     /**
      * bind multiple views with an
-     * {@link com.daimajia.swipe.SwipeLayout.OnRevealListener}.
+     * {@link com.midaslefkowitz.swipe.SwipeLayout.OnRevealListener}.
      *
      * @param childIds the view id.
-     * @param l        the {@link com.daimajia.swipe.SwipeLayout.OnRevealListener}
+     * @param l        the {@link com.midaslefkowitz.swipe.SwipeLayout.OnRevealListener}
      */
     public void addRevealListener(int[] childIds, OnRevealListener l) {
         for (int i : childIds)
@@ -1237,8 +1237,8 @@ public class SwipeLayout extends FrameLayout {
 
     /**
      * There are 2 diffirent show mode.
-     * {@link com.daimajia.swipe.SwipeLayout.ShowMode}.PullOut and
-     * {@link com.daimajia.swipe.SwipeLayout.ShowMode}.LayDown.
+     * {@link com.midaslefkowitz.swipe.SwipeLayout.ShowMode}.PullOut and
+     * {@link com.midaslefkowitz.swipe.SwipeLayout.ShowMode}.LayDown.
      *
      * @param mode
      */
@@ -1298,7 +1298,7 @@ public class SwipeLayout extends FrameLayout {
     /**
      * get the open status.
      *
-     * @return {@link com.daimajia.swipe.SwipeLayout.Status} Open , Close or
+     * @return {@link com.midaslefkowitz.swipe.SwipeLayout.Status} Open , Close or
      * Middle.
      */
     public Status getOpenStatus() {
